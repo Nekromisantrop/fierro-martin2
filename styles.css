@@ -1,0 +1,130 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f9f4ed;
+}
+header {
+    background: #8B5B29; /* Tom terroso */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav {
+    margin: 20px 0;
+}
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #dcdcdc;
+}
+.highlight {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f2e0d3; /* Tom claro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.highlight video {
+    width: 100%;
+    height: auto; /* Preenche a largura */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+section {
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    padding: 10px 0;
+}
+.carousel-item {
+    flex: 0 0 80%; /* Cada item ocupa 80% do espaço */
+    max-width: 400px;
+    margin: 0 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-size: 1.1em; /* Aumenta a legibilidade */
+}
+.carousel-button {
+    background: #8B5B29; /* Tom terroso */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.carousel-button.prev {
+    left: 10px;
+}
+.carousel-button.next {
+    right: 10px;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact input, .contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact button {
+    padding: 10px 20px;
+    background: #8B5B29; /* Tom terroso */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.contact button:hover {
+    background: #7A4A24; /* Tom mais escuro */
+}
+footer {
+    background: #8B5B29; /* Tom terroso */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+@media (max-width: 600px) {
+    .carousel {
+        flex-direction: column;
+    }
+    .carousel-items {
+        flex-direction: column;
+    }
+    .carousel-item {
+        max-width: 90%; /* Ajuste para telas menores */
+        margin: 0 auto; /* Centraliza */
+    }
+}
